@@ -169,6 +169,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Treble
 BOARD_VNDK_VERSION := current
 
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
